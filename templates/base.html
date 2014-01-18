@@ -1,0 +1,29 @@
+{% load bootstrap_toolkit %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+	{% bootstrap_stylesheet_tag %}
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+	<div class="navbar navbar-fixed-top">  
+  		<div class="navbar-inner">  
+    			<div class="container-fluid">  
+				<ul class="nav">  
+				  <li>  
+				    <a class="brand" href="/">Discogs Voting System</a>  
+				  </li>  
+				</ul>  
+    			</div>  
+  		</div>  
+	</div>
+	<br><br><br>
+	<div class=container-fluid>
+    		{% block content %}
+    		{% endblock %}
+	</div>
+    </body>
+</html>
+
